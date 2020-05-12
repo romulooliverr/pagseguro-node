@@ -102,7 +102,8 @@ payment.sendTransaction({
    credit_card_token: String, //token do cartão de crédito
    value: Number,
    installments: Number, //opcional, padrão 1
-   hash: String //senderHash gerado pela biblioteca do PagSeguro
+   hash: String, //senderHash gerado pela biblioteca do PagSeguro
+   notificationURL: String //opcional, URL de notificação da transação
 }, function(err, data) {
 
 });
